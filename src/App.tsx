@@ -1,13 +1,11 @@
 /***
  * Components
  */
-import Header from "./components/Header/Header";
+import {Header} from "./components/layouts/index";
 
 function App() {
   return (
-    <div className="container mx-auto px-4">
       <Header />
-    </div>
   );
 }
 

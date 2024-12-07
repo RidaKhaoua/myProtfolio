@@ -1,0 +1,4 @@
+.menu_btn {
+  @apply bg-zinc-50/10 w-10 h-10 grid place-items-center rounded-xl 
+    ring-inset ring-1 ring-red-500/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 duration-300 active:scale-95;
+}

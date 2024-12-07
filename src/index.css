@@ -3,13 +3,52 @@
 @tailwind utilities;
 
 /*--------------------------------------------*/
-    *    Base
+*    Base
 /*--------------------------------------------*/
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    @apply bg-zinc-900 text-white h-[200vh]
+  @apply bg-zinc-900 text-white;
+}
+
+/*-------------------------------------*\
+  * UTILITIES
+/*--------------------------------------*/
+.material-symbols-rounded {
+  @layer w-[1em] has-[1em] overflow-hidden;
+  font-variation-settings: "FILL" 0, "wght" 400, "GARD" 0, "opsz" 24;
+}
+
+/*-------------------------------------*\
+  * Components
+/*--------------------------------------*/
+
+/* Navbar */
+
+.navbar {
+  @apply absolute top-full right-0 mt-2 min-w-36 p-2
+    bg-zinc-50/10 rounded-2xl text-sm ring-inset
+    ring-1 ring-zinc-50/5 scale-90 blur-sm opacity-0 invisible isolate 
+    transition-[opacity,transform,filter]
+    md:static md:opacity-100 md:scale-100 md:blur-0 md:visible backdrop-blur-2xl;
+}
+
+.navbar.active {
+  @apply scale-100 blur-0 opacity-100 visible;
+}
+
+.nav-link {
+  @apply flex h-9 px-4 items-center   font-medium text-zinc-50/50
+     hover:text-zinc-50 tracking-wide transition-colors;
+}
+
+.nav-link.active {
+  @apply text-zinc-900 duration-500;
+}
+
+.active-box {
+  @apply bg-zinc-50 h-9  rounded-lg absolute   -z-10 transition-[top_left] duration-500;
 }

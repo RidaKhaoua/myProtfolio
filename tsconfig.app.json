@@ -14,6 +14,22 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*" : ["src/assets/*"],
+      "@components/*":["src/components/*"],
+      "@Hooks/*": ["src/Hooks/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*" : ["src/pages/*"],
+      "@routes/*" : ["src/routes/*"],
+      "@services/*" : ["src/services/*"],
+      "@store/*" : ["src/store/*"],
+      "@styles/*" : ["src/styles/*"],
+      "@types" : ["src/types/index.ts"],
+      "@validation/*" : ["src/validation/*"],
+      "@util/*": ["src/util/*"],
+      "@constant/*": ["src/constant/*"]
+    },
 
     /* Linting */
     "strict": true,
