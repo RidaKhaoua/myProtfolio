@@ -26,3 +26,15 @@ export const links: {
     className: "nav-link md:hidden",
   },
 ];
+
+
+export const aboutItems = [
+  {
+    label: "Project done",
+    number: 1
+  },
+  {
+    label: "Years of expierience",
+    number: 1
+  }
+]

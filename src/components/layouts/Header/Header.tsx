@@ -2,12 +2,13 @@
  * UI
  */
 import { useState } from "react";
-import { Button } from "../../ui";
+import { Button, Logo } from "@components/ui";
 
 /**
  * Layouts
  */
 import Navbar from "../Navbar/Navbar";
+
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const toggleNavbar = () => {
@@ -19,7 +20,9 @@ function Header() {
         className="max-w-screen-2xl w-full   mx-auto px-4 flex items-center justify-between 
       md:px-6 md:grid md:grid-cols-[1fr_3fr_1fr]">
         <h1 className="">
-          <a href="/">RD</a>
+          <a href="/">
+          <Logo/>
+          </a>
         </h1>
         <div className="relative md:justify-self-center">
           <Button
