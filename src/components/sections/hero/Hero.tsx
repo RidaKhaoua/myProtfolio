@@ -34,12 +34,12 @@ function Hero() {
               download="My_CV"
               target="_blank"
             />
-            <LinkHref 
-            classname="btn btn-outline" 
-            label="scroll down" 
-            icon="arrow_downward"
-            iconAniamte="animate-bounce"
-            href="#about"
+            <LinkHref
+              classname="btn btn-outline"
+              label="scroll down"
+              icon="arrow_downward"
+              iconAniamte="animate-bounce"
+              href="#about"
             />
           </div>
         </div>
