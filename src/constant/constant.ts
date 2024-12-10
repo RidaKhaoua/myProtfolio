@@ -27,14 +27,51 @@ export const links: {
   },
 ];
 
-
 export const aboutItems = [
   {
     label: "Project done",
-    number: 1
+    number: 1,
   },
   {
     label: "Years of expierience",
-    number: 1
+    number: 1,
+  },
+];
+
+export const skillItems = [
+  {
+    imgSrc: "/src/assets/images/CSS3.svg",
+    label: "Css",
+    desc: "Design tool",
+  },
+  {
+    imgSrc: "/src/assets/images/JavaScript.svg",
+    label: "JavaScript",
+    desc: "Interaction",
+  },
+  {
+    imgSrc: "/src/assets/images/React.svg",
+    label: "React",
+    desc: "Framework",
+  },
+  {
+    imgSrc: "/src/assets/images/TypeScript.svg",
+    label: "TypeScript",
+    desc: "extends Javascript",
+  },
+  {
+    imgSrc: "/src/assets/images/Redux.svg",
+    label: "Redux",
+    desc: "Global state management",
+  },
+  {
+    imgSrc: "/src/assets/images/Tailwind CSS.svg",
+    label: "Tailwind css",
+    desc: "User Interface",
+  },
+  {
+    imgSrc:"/src/assets/images/Sass.svg",
+    label: "Sass",
+    desc:"SS with superpowers"
   }
-]
+];
