@@ -1,9 +1,9 @@
 interface TProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  label: string;
-  classname: string;
-  icon: string;
+  label?: string;
+  classname?: string;
+  icon?: string;
   href: string;
-  target?: string;
+  target?: "_self" | "_blank";
   iconAniamte?: "animate-bounce";
 }
 

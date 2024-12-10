@@ -14,6 +14,7 @@ body {
   @apply bg-zinc-900 text-white;
 }
 
+
 /*-------------------------------------*\
   * TYPOGRAPHY
 /*--------------------------------------*/
@@ -32,6 +33,10 @@ body {
 
 .headline-2 {
   @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
+}
+
+.title-1 {
+  @apply text-[22px] font-normal
 }
 
 /*-------------------------------------*\
