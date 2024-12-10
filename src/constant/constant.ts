@@ -70,8 +70,17 @@ export const skillItems = [
     desc: "User Interface",
   },
   {
-    imgSrc:"/src/assets/images/Sass.svg",
+    imgSrc: "/src/assets/images/Sass.svg",
     label: "Sass",
-    desc:"SS with superpowers"
+    desc: "CSS with superpowers",
+  },
+];
+
+export const works = [
+  {
+    imgSrc: "/src/assets/images/order_food.png",
+    title: "eCommerce website",
+    tags: ["eCommerce", "Development"],
+    projectLink: "https://ridakhaoua.github.io/order_food_app",
   }
 ];
