@@ -1,6 +1,5 @@
 import { Button, Input } from "@components/ui";
 import LinkHref from "@components/ui/anchor/LinkHref";
-import { useCallback, useMemo, useState } from "react";
 
 const socialLinks = [
   {
@@ -40,30 +39,22 @@ const socialLinks = [
 ];
 
 function Contact() {
-  const [isLoading, setIsLoading] = useState(false);
-
-  const renderSocialLinks = useMemo(() => {
-    return socialLinks.map(({ icon, href, alt }, key) => (
-      <LinkHref
-        key={key}
-        href={href}
-        target="_blank"
-        className="w-11 h-11 grid place-content-center rounded 
-        ring-inset ring-1 
-        ring-purple-400
-        hover:bg-purple-300
-        hover:text-black
-        transition-[background-color,color]
-        duration-300
-        "
-        icon={icon}
-      />
-    ));
-  }, []);
-
-  const handleSubmit = () => {
-    setIsLoading(prev => !prev);
-  }
+  const renderSocialLinks = socialLinks.map(({ icon, href, alt }, key) => (
+    <LinkHref
+      key={key}
+      href={href}
+      target="_blank"
+      className="w-11 h-11 grid place-content-center rounded 
+      ring-inset ring-1 
+      ring-purple-400
+      hover:bg-purple-300
+      hover:text-black
+      transition-[background-color,color]
+      duration-300
+      "
+      icon={icon}
+    />
+  ));
 
   return (
     <section className="section" id="contact">
