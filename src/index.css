@@ -14,7 +14,6 @@ body {
   @apply bg-zinc-900 text-white;
 }
 
-
 /*-------------------------------------*\
   * TYPOGRAPHY
 /*--------------------------------------*/
@@ -32,11 +31,11 @@ body {
 }
 
 .headline-2 {
-  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
 }
 
 .title-1 {
-  @apply text-[22px] font-normal
+  @apply text-[22px] font-normal;
 }
 
 /*-------------------------------------*\
@@ -53,6 +52,20 @@ body {
 
 .section {
   @apply pt-20 lg:pt-32;
+}
+
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2;
+}
+
+.text-field {
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl 
+  ring-1 ring-inset  ring-purple-300 
+  focus:ring-purple-500 transition-shadow ;
+}
+
+.text-field::placeholder {
+  @apply text-zinc-400
 }
 
 /*-------------------------------------*\
@@ -113,5 +126,5 @@ body {
 }
 
 .btn-outline {
-  @apply bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
+  @apply bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
 }

@@ -6,9 +6,9 @@ interface IButton extends HTMLAttributes<HTMLButtonElement> {
   className?: string;
 }
 
-function Button({ children, text, className, ...rest }: IButton) {
+function Button({ children, text, className ,...rest }: IButton) {
   return (
-    <button className={className} {...rest}>
+    <button className={className} {...rest} >
       {text}
       {children}
     </button>

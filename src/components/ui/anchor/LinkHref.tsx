@@ -1,7 +1,9 @@
+import React from "react";
+
 interface TProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   label?: string;
-  classname?: string;
-  icon?: string;
+  className?: string;
+  icon?: string | React.ReactNode;
   href: string;
   target?: "_self" | "_blank";
   iconAniamte?: "animate-bounce";
@@ -9,14 +11,14 @@ interface TProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 function LinkHref({
   label,
-  classname,
+  className,
   icon,
   href,
   iconAniamte,
   target = "_self",
 }: TProps) {
   return (
-    <a className={classname} href={href} target={target}>
+    <a className={className} href={href} target={target}>
       {label}
       {icon && (
         <span
