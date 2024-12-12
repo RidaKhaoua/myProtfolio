@@ -6,6 +6,7 @@ import { Header } from "@components/layouts/index";
 import About from "@components/sections/about/About";
 import Skills from "@components/sections/skills/Skills";
 import Work from "@components/sections/work/Work";
+import Contact from "@components/sections/contact/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <About/>
         <Skills/>
         <Work/>
+        <Contact/>
       </main>
     </>
   );
