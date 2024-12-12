@@ -27,7 +27,7 @@ function Hero() {
           </h2>
           <div className="flex gap-3">
             <LinkHref
-              classname="btn btn-primary"
+              className="btn btn-primary"
               label="Download cv"
               icon="download"
               href={myCv}
@@ -35,7 +35,7 @@ function Hero() {
               target="_blank"
             />
             <LinkHref
-              classname="btn btn-outline"
+              className="btn btn-outline"
               label="scroll down"
               icon="arrow_downward"
               iconAniamte="animate-bounce"
