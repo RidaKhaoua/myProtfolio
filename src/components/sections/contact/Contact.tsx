@@ -39,19 +39,19 @@ const socialLinks = [
 ];
 
 function Contact() {
-  const renderSocialLinks = socialLinks.map(({ icon, href, alt }, key) => (
+  const renderSocialLinks = socialLinks.map(({ icon, href }, key) => (
     <LinkHref
       key={key}
       href={href}
       target="_blank"
-      className="w-11 h-11 grid place-content-center rounded 
+      className={`reveal-up w-11 h-11 grid place-content-center rounded 
       ring-inset ring-1 
       ring-purple-400
       hover:bg-purple-300
       hover:text-black
       transition-[background-color,color]
-      duration-300
-      "
+      duration-300`
+      }
       icon={icon}
     />
   ));
@@ -60,13 +60,13 @@ function Contact() {
     <section className="section" id="contact">
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
-          <h2 className="headline-2 lg:max-w-[12ch]">
+          <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
             Contact me for collaboration
           </h2>
           <p
             className=" md:text-xl  max-w-[50ch] 
             lg:max-w-[30ch] mt-3
-           mb-8 text-zinc-400">
+           mb-8 text-zinc-400 reveal-up">
             Reach out today to discuss your project needs and start
             collaborating on something amazing!
           </p>
@@ -77,7 +77,7 @@ function Contact() {
           method="POST"
           className="xl:pl-10 2xl:pl-20">
           <div className="md:grid md:grid-cols-2 items-center gap-2 mb-4">
-            <div className="mb-4">
+            <div className="mb-4 reveal-up">
               <label htmlFor="name" className="label">
                 Name
               </label>
@@ -89,7 +89,7 @@ function Contact() {
                 className="text-field"
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 reveal-up">
               <label htmlFor="email" className="label">
                 Email
               </label>
@@ -102,7 +102,7 @@ function Contact() {
               />
             </div>
           </div>
-          <div className="">
+          <div className="reveal-up">
             <label htmlFor="message" className="label">
               Message
             </label>
@@ -113,7 +113,7 @@ function Contact() {
               required
               className="text-field mb-4 resize-y min-h-32 max-h-80"></textarea>
           </div>
-          <Button className="btn btn-primary w-full [&]:max-w-full justify-center">
+          <Button className="reveal-up btn btn-primary w-full [&]:max-w-full justify-center">
             Submit
           </Button>
         </form>
