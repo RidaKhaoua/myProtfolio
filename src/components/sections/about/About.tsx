@@ -12,9 +12,9 @@ function About() {
     </div>
   ));
   return (
-    <section className="section" id="about">
+    <section className="section" id="about_us" >
       <div className="container">
-        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12">
+        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
           <p className="text-zinc-300 mb-4 md:mb-8 md:text-x md:max-w-[60ch]">
             I am a front-end developer who enjoys creating well-designed and
             responsive websites. I focus on making websites that look good and

@@ -6,9 +6,10 @@ type TProps = {
   title: string;
   tags: string[];
   projectLink: string;
+  className?: string
 };
 
-function WorkCard({ imgSrc, title, tags, projectLink }: TProps) {
+function WorkCard({ imgSrc, title, tags, projectLink, className }: TProps) {
   const renderTags = tags.map((tag, key) => (
     <span
       key={key}
@@ -19,8 +20,8 @@ function WorkCard({ imgSrc, title, tags, projectLink }: TProps) {
 
   return (
     <div
-      className="relative p-4 rounded-2xl bg-zinc-800
-     hover:bg-zinc-700/50 active:bg-zinc-700/60 duration-300">
+      className={`${className} relative p-4 rounded-2xl bg-zinc-800
+     hover:bg-zinc-700/50 active:bg-zinc-700/60 duration-300`}>
       <figure className="aspect-square rounded-lg mb-4">
         <img
           src={imgSrc}

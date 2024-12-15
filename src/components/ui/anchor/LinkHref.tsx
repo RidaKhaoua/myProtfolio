@@ -7,6 +7,7 @@ interface TProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
   target?: "_self" | "_blank";
   iconAniamte?: "animate-bounce";
+  children?: React.ReactNode
 }
 
 function LinkHref({
@@ -16,10 +17,12 @@ function LinkHref({
   href,
   iconAniamte,
   target = "_self",
+  children
 }: TProps) {
   return (
     <a className={className} href={href} target={target}>
       {label}
+
       {icon && (
         <span
           className={`material-symbols-rounded ${iconAniamte}`}
@@ -27,6 +30,7 @@ function LinkHref({
           {icon}
         </span>
       )}
+      {children}
     </a>
   );
 }

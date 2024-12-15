@@ -82,6 +82,39 @@ export const works = [
     title: "eCommerce website",
     tags: ["eCommerce", "Development"],
     projectLink: "https://ridakhaoua.github.io/order_food_app",
-  }
+  },
 ];
 
+export const sitemap = [
+  {
+    label: "Home",
+    href: "#home",
+  },
+  {
+    label: "About",
+    href: "#about",
+  },
+  {
+    label: "Work",
+    href: "#work",
+  },
+  {
+    label: "Reviews",
+    href: "#reviews",
+  },
+  {
+    label: "Contact me",
+    href: "#contact",
+  },
+];
+
+export const socials = [
+  {
+    label: "GitHub",
+    href: "https://github.com/RidaKhaoua",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/reda-khaoua-1718a81b1/",
+  },
+];
