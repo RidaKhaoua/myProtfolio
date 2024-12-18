@@ -21,4 +21,5 @@ export default defineConfig({
       "@constant": path.resolve(__dirname,"src/constant")
     },
   },
+  base: "/ridaKhaoua-protfolio/"
 });
