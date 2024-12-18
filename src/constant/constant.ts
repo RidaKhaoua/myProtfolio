@@ -1,3 +1,12 @@
+import CSS3 from "@assets/images/CSS3.svg";
+import Javascript from "@assets/images/JavaScript.svg";
+import React from "@assets/images/React.svg";
+import Redux from "@assets/images/Redux.svg";
+import Sass from "@assets/images/Sass.svg";
+import Tailwind from "@assets/images/Tailwind CSS.svg";
+import Typescript from "@assets/images/TypeScript.svg";
+import OrderFood from "@assets/images/order_food.png";
+
 export const links: {
   label: string;
   link: string;
@@ -40,37 +49,37 @@ export const aboutItems = [
 
 export const skillItems = [
   {
-    imgSrc: "/src/assets/images/CSS3.svg",
+    imgSrc: CSS3,
     label: "Css",
     desc: "Design tool",
   },
   {
-    imgSrc: "/src/assets/images/JavaScript.svg",
+    imgSrc: Javascript,
     label: "JavaScript",
     desc: "Interaction",
   },
   {
-    imgSrc: "/src/assets/images/React.svg",
+    imgSrc: React,
     label: "React",
     desc: "Framework",
   },
   {
-    imgSrc: "/src/assets/images/TypeScript.svg",
+    imgSrc: Typescript,
     label: "TypeScript",
     desc: "extends Javascript",
   },
   {
-    imgSrc: "/src/assets/images/Redux.svg",
+    imgSrc: Redux,
     label: "Redux",
     desc: "Global state management",
   },
   {
-    imgSrc: "/src/assets/images/Tailwind CSS.svg",
+    imgSrc: Tailwind,
     label: "Tailwind css",
     desc: "User Interface",
   },
   {
-    imgSrc: "/src/assets/images/Sass.svg",
+    imgSrc: Sass,
     label: "Sass",
     desc: "CSS with superpowers",
   },
@@ -78,7 +87,7 @@ export const skillItems = [
 
 export const works = [
   {
-    imgSrc: "/src/assets/images/order_food.png",
+    imgSrc: OrderFood,
     title: "eCommerce website",
     tags: ["eCommerce", "Development"],
     projectLink: "https://ridakhaoua.github.io/order_food_app",

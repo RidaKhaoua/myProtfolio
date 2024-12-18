@@ -1,5 +1,5 @@
 import LinkHref from "@components/ui/anchor/LinkHref";
-import React from "react";
+
 
 type TProps = {
   imgSrc: string;
