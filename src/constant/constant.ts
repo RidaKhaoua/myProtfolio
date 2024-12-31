@@ -39,16 +39,7 @@ export const links: {
   },
 ];
 
-export const aboutItems = [
-  {
-    label: "Project done",
-    number: 1,
-  },
-  {
-    label: "Years of expierience",
-    number: 1,
-  },
-];
+
 
 export const skillItems = [
   {
@@ -141,6 +132,17 @@ export const sitemap = [
   {
     label: "Contact me",
     href: "#contact",
+  },
+];
+
+export const aboutItems = [
+  {
+    label: "Project done",
+    number: works.length,
+  },
+  {
+    label: "Years of expierience",
+    number: 1,
   },
 ];
 
