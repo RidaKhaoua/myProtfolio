@@ -13,7 +13,7 @@ function WorkCard({ imgSrc, title, tags, projectLink, className }: TProps) {
   const renderTags = tags.map((tag, key) => (
     <span
       key={key}
-      className="bg-zinc-50/5  text-zinc-400 rounded-lg p-1 text-sm h-8 flex items-center">
+      className="bg-zinc-50/5  text-zinc-400 rounded-lg p-1 text-xs h-8 flex items-center">
       {tag}
     </span>
   ));
@@ -30,19 +30,19 @@ function WorkCard({ imgSrc, title, tags, projectLink, className }: TProps) {
           className="w-full h-full rounded object-cover object-top"
         />
       </figure>
-      <div className=" flex items-center justify-between">
-        <div>
-          <h3 className="title-1">{title}</h3>
-          <div className="flex gap-4">{renderTags}</div>
+      <div className=" flex  gap-4 justify-between">
+        <div className="w-10/12">
+          <h3 className="title-1 mb-3">{title}</h3>
+          <div className="flex gap-4 flex-wrap">{renderTags}</div>
         </div>
 
         <div
-          className="w-11 h-11 cursor-pointer
-         bg-purple-600 flex items-center justify-center 
+          className="w-11 h-11 cursor-pointer 
+         bg-purple-600  flex items-center justify-center 
           rounded-lg ">
           <LinkHref
             href={projectLink}
-            className="cursor-pointer"
+            className="cursor-pointer flex items-center"
             target="_blank"
             icon="arrow_outward"
             >

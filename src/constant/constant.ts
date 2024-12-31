@@ -5,7 +5,10 @@ import Redux from "@assets/images/Redux.svg";
 import Sass from "@assets/images/Sass.svg";
 import Tailwind from "@assets/images/Tailwind CSS.svg";
 import Typescript from "@assets/images/TypeScript.svg";
+// image projects
 import OrderFood from "@assets/images/order_food.png";
+import FifaWorldCup from "@assets/images/Fifa World.png";
+import Food from "@assets/images/food.png";
 
 export const links: {
   label: string;
@@ -85,13 +88,37 @@ export const skillItems = [
   },
 ];
 
-export const works = [
+export const works: {
+  imgSrc: string;
+  title: string;
+  tags: string[];
+  projectLink: string;
+}[] = [
   {
     imgSrc: OrderFood,
     title: "eCommerce website",
-    tags: ["eCommerce", "Development"],
+    tags: [
+      "eCommerce",
+      "React",
+      "Redux_toolkit",
+      "React-router",
+      "React-hook-form",
+      "TS"
+    ],
     projectLink: "https://ridakhaoua.github.io/order_food_app",
   },
+  {
+    imgSrc: FifaWorldCup,
+    title: "Fifa World cup website",
+    tags: ["Development", "HTML", "CSS", "Sass", "JS"],
+    projectLink: "https://ridakhaoua.github.io/fifa-world-cup/",
+  },
+  {
+    imgSrc: Food,
+    title: "Order Food",
+    tags: ["HTML", "CSS", "JS"],
+    projectLink: "https://ridakhaoua.github.io/food_store/"
+  }
 ];
 
 export const sitemap = [
