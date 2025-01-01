@@ -1,5 +1,5 @@
 import myImg from "@assets/images/my-img.webp";
-import myCv from "@assets/pdf/rida_front_end.pdf";
+import myCv from "@assets/pdf/CV_rida_khaoua_front-end.pdf";
 
 import LinkHref from "@components/ui/anchor/LinkHref";
 function Hero() {
