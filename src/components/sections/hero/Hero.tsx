@@ -1,4 +1,4 @@
-import myImg from "@assets/images/my-img.webp";
+import me from "@assets/images/me.jpg";
 import myCv from "@assets/pdf/CV_rida_khaoua_front-end.pdf";
 
 import LinkHref from "@components/ui/anchor/LinkHref";
@@ -10,7 +10,8 @@ function Hero() {
           <div className="flex items-center gap-3 mb-8">
             <figure className="bg-zinc-700 overflow-hidden rounded-lg w-9 h-9">
               <img
-                src={myImg}
+                loading="lazy"
+                src={me}
                 alt="Rida Khaoua"
                 className="img-cover w-18 h-12 mx-auto object-cover rounded-full"
               />
@@ -46,9 +47,10 @@ function Hero() {
         <div className="hero_right hidden  lg:block">
           <figure
             className="w-full max-w-[250px] ml-auto bg-gradient-to-t from-purple-400 via-25% via-purple-500/40 to-65% 
-          rounded-[60px] overflow-hidden">
+          rounded-[60px] overflow-hidden"
+          >
             <img
-              src={myImg}
+              src={me}
               width={250}
               alt="Rida khaoua"
               className="rounded mx-auto  bg-zinc- object-cover rotate-2"
